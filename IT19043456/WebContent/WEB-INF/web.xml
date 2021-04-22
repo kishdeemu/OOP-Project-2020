@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+
+  
+  <servlet>
+  	<servlet-name>adminReg</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.RegAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminReg</servlet-name>
+  	<url-pattern>/regAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>adminLog</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.LogAdminServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminLog</servlet-name>
+  	<url-pattern>/logAdmin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>adminLogOut</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.LogOutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>adminLogOut</servlet-name>
+  	<url-pattern>/logOut</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+  	<servlet-name>studentReg</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.RegStudentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>studentReg</servlet-name>
+  	<url-pattern>/regStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addexam</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.AddExamServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addexam</servlet-name>
+  	<url-pattern>/addExam</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>examservice</servlet-name>
+  	<servlet-class>com.osmsoop.service.ExamService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>examservice</servlet-name>
+  	<url-pattern>/ExamService</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+    <servlet>
+  	<servlet-name>updateExam</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.UpdateExamServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>updateExam</servlet-name>
+  	<url-pattern>/updateExam</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>deleteExam</servlet-name>
+  	<servlet-class>com.osmsoop.servlets.DeleteExamServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deleteExam</servlet-name>
+  	<url-pattern>/deleteExam</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  
+</web-app>

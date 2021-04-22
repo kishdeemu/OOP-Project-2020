@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+      
+		<!-- login student -->
+		<servlet>
+			<servlet-name>Studnetlogin</servlet-name>
+			<servlet-class>Log.student.LogingstudentServelt</servlet-class>
+		</servlet>	
+		<servlet-mapping>
+			<servlet-name>Studnetlogin</servlet-name>
+			<url-pattern>/Logstudent</url-pattern>
+		</servlet-mapping>
+		
+		<!-- insert student -->
+		<servlet>
+			<servlet-name>StudentInsert</servlet-name>
+			<servlet-class>Log.student.Insertstudentservelt</servlet-class>
+		</servlet>
+		<servlet-mapping>
+			<servlet-name>StudentInsert</servlet-name>
+			<url-pattern>/Insertstudent</url-pattern>
+		</servlet-mapping>
+		
+		<!-- update student -->
+		<servlet>
+			<servlet-name>StudnetUpdate</servlet-name>
+			<servlet-class>Log.student.UpdatestudentServlet</servlet-class>
+		</servlet>	
+		<servlet-mapping>
+			<servlet-name>StudnetUpdate</servlet-name>
+			<url-pattern>/Updatestudent</url-pattern>
+		</servlet-mapping>
+		
+		<!-- delete student -->
+		<servlet>
+			<servlet-name>StudnetDelete</servlet-name>
+			<servlet-class>Log.student.DeletestudentServlet</servlet-class>
+		</servlet>	
+		<servlet-mapping>
+			<servlet-name>StudnetDelete</servlet-name>
+			<url-pattern>/Deletestudent</url-pattern>
+		</servlet-mapping>
+		
+</web-app>
+         
